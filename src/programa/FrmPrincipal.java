@@ -6,6 +6,7 @@
 package programa;
 
 import Modelo.Calcular;
+import Modelo.controle;
 
 /**
  *
@@ -154,8 +155,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
     private void BtnSomarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_BtnSomarActionPerformed
     {//GEN-HEADEREND:event_BtnSomarActionPerformed
-      Calcular adicao= new Calcular();
-      
+      controle adicao= new controle();
       String resul = adicao.Calcular(TxfPrimeiroNumero.getText(),TxfSegundoNumero.getText(),"+");
       LblResultado.setText(resul);
     
@@ -164,21 +164,21 @@ public class FrmPrincipal extends javax.swing.JFrame {
 
     private void BtnMultiplicacaoActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_BtnMultiplicacaoActionPerformed
     {//GEN-HEADEREND:event_BtnMultiplicacaoActionPerformed
-        Calcular multiplicacao=new Calcular();
+        controle multiplicacao=new controle();
         String resul= multiplicacao.Calcular(TxfPrimeiroNumero.getText(),TxfSegundoNumero.getText(),"*");
         LblResultado.setText(resul);
     }//GEN-LAST:event_BtnMultiplicacaoActionPerformed
 
     private void BtnDivisaoActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_BtnDivisaoActionPerformed
     {//GEN-HEADEREND:event_BtnDivisaoActionPerformed
-        Calcular divisao=new Calcular();
+        controle divisao=new controle();
         String resul=divisao.Calcular(TxfPrimeiroNumero.getText(),TxfSegundoNumero.getText(),"/");
         LblResultado.setText(resul);
     }//GEN-LAST:event_BtnDivisaoActionPerformed
 
     private void BtnSubtracaoActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_BtnSubtracaoActionPerformed
     {//GEN-HEADEREND:event_BtnSubtracaoActionPerformed
-      Calcular subtracao=new Calcular();
+      controle subtracao=new controle();
       String resul= subtracao.Calcular(TxfPrimeiroNumero.getText(),TxfSegundoNumero.getText(),"-");
       LblResultado.setText(resul);
     }//GEN-LAST:event_BtnSubtracaoActionPerformed

@@ -12,25 +12,20 @@ package Modelo;
 public class Calcular
 {
    
-    public String  Calcular(String n1, String n2,String op){
-        
-        
-        
-    
-     Double num1=Double.parseDouble(n1);
-     Double resultado= 0.0;
-     Double num2=Double.parseDouble(n2);
-        if (op=="+"){
-        resultado=num1+num2;
+    public String calcular(Double n1, Double n2,String op){
+     Double resultado=0.0;   
+     
+        if (op.equals("+")){
+        resultado=n1+n2;
     }  
-        if (op=="-"){
-        resultado= num1-num2;
+        if (op.equals("-")){
+        resultado= n1-n2;
     }
-        if (op=="*"){
-        resultado=num1*num2;
+        if (op.equals("*")){
+        resultado=n1*n2;
     }
-        if (op=="/"){
-        resultado= num1/num2;
+        if (op.equals("/")){
+        resultado= n1/n2;
     }
         return resultado.toString();
         
